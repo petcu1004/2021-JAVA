@@ -1,10 +1,10 @@
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
-public class MyGame extends JFrame { 
+public class MyGame extends JFrame { //JFrame 클래스를 상속받음
 
-    public MyGame() {
-        initUI();
+    public MyGame() { //My Game의 생성자
+        initUI(); //initUI()메서드 실행
     }
     
     private void initUI() {
@@ -14,7 +14,7 @@ public class MyGame extends JFrame {
         setVisible(true); //창을 화면에 나타나게 함
     }
 
-    public static void main(String[] args) {
-            	MyGame ex = new MyGame(); //객체 생성
+    public static void main(String[] args) { //main함수
+            	MyGame ex = new MyGame(); //MyGame 클래스의 객체 생성
     }
 }

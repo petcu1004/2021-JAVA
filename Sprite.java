@@ -2,23 +2,23 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 
 public class Sprite { //화면에서 움직이는 그림을 나타내는 클래스
-	//공통적으로 쓰이는 걸 이 클래스에 다 정의함
+	//객체가 공통적으로 쓰는 메서드를 이 클래스에 다 정의함
 
-	protected int x; //우주선 위치 x
-	protected int y; //우주선 위치 y
-	protected int width;
-	protected int height;
-	protected boolean visible;
-	protected Image image; //우주선 이미지 변수
+	protected int x; //어떤 객체의 위치 x
+	protected int y; //어떤 객체의 위치 y
+	protected int width; //어떤 객체의 너비
+	protected int height; //어떤 객체의 높이
+	protected boolean visible; //어떤 객체를 화면에 보일지 유뮤 결정
+	protected Image image; //어떤 객체의 이미지 변수
 
-	public Sprite(int x, int y) {
-		this.x = x;
-		this.y = y;
-		visible = true;
+	public Sprite(int x, int y) { //Sprite 클래스의 생성자
+		this.x = x; //해당 객체의 x좌표
+		this.y = y; //해당 객체의 y좌표
+		visible = true; //화면에 보이게 설정
 	}
 
 	protected void loadImage(String imageName) { //이미지 파일을 읽어오는 것
-		ImageIcon ii = new ImageIcon(imageName); 
+		ImageIcon ii = new ImageIcon(imageName); //이미지 객체 생성
 		image = ii.getImage(); //이미지 아이콘 추출
 	}
 
@@ -27,8 +27,8 @@ public class Sprite { //화면에서 움직이는 그림을 나타내는 클래스
 		height = image.getHeight(null); //이미지 사이즈 그대로의 높이
 	}
 
-	public Image getImage() {
-		return image; //이미지 반환
+	public Image getImage() { //이미지 반환
+		return image; 
 	}
 
 	public int getX() { //현재 위치(x)를 반환해주는 접근자 메서드 (필드값 읽기)
