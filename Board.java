@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.awt.Image;
 import java.awt.Rectangle;
 
-import javax.swing.JOptionPane;
 
 //그림이 그려지는 클래스
 public class Board extends JPanel implements ActionListener, KeyListener {
@@ -110,10 +109,8 @@ public class Board extends JPanel implements ActionListener, KeyListener {
 			a.remove(i);
 		
 		if(a.size()==0 )
-		{
-			showMessageDialog(null, "게임이 종료됩니다.");
 			System.exit(0);
-		}
+		
 
 			  
 
