@@ -31,19 +31,19 @@ public class Sprite { //화면에서 움직이는 그림을 나타내는 클래스
 		return image; 
 	}
 
-	public int getX() { //현재 위치(x)를 반환해주는 접근자 메서드 (필드값 읽기)
-		return x;
-	}
+   public int getX() { //현재 위치(x)를 반환해주는 접근자 메서드 (필드값 읽기)
+      return x;
+   }
 
-	public int getY() { //현재 위치(y)를 반환해주는 접근자 메서드 (필드값 읽기)
-		return y;
-	}
+   public int getY() { //현재 위치(y)를 반환해주는 접근자 메서드 (필드값 읽기)
+      return y;
+   }
 
-	public boolean isVisible() { //프레임에 보여줄 것인지 확인할 수 있는 접근자 메서드
-		return visible;
-	}
+   public boolean isVisible() { //프레임에 보여줄 것인지 확인할 수 있는 접근자 메서드
+      return visible;
+   }
 
-	public void setVisible(Boolean visible) { 
-		this.visible = visible;
-	}
+   public void setVisible(Boolean visible) { 
+      this.visible = visible;
+   }
 }
